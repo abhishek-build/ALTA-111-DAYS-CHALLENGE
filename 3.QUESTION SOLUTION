@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main(){
+    float price, discount, tax;
+    float discountedprice, finalprice;
+
+    cout << "entre origional price: ";
+    cin >> price;
+
+    cout << "entre discount percentage: ";
+    cin >> discount;
+
+    cout << "entre sales tax percentage: ";
+    cin >> tax;
+
+    // Apply discount first
+    discountedprice = price - (price * discount /100);
+
+    //Apply tax on discounted price
+    finalprice = discountedprice + (discountedprice * tax /100);
+
+    cout << "final payable price = " << finalprice << endl;
+
+    return 0;
+}
