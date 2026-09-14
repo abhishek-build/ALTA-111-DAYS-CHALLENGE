@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int main(){
+    bool isActive = true;
+
+    cout << "Before toogle: " << isActive << endl;
+
+    isActive = !isActive;
+
+    cout << "after toogle: " << isActive << endl;
+
+    return 0;
+
+}
