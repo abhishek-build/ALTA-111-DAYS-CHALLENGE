@@ -1,0 +1,28 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    float accountBalance;
+    int withdrawalAmount;
+    int transactionFee = 2;
+
+    cin >> accountBalance >> withdrawalAmount;
+
+    if (withdrawalAmount > 0 &&
+        withdrawalAmount % 100 == 0 &&
+        accountBalance >= withdrawalAmount + transactionFee) {
+
+        accountBalance = accountBalance - withdrawalAmount - transactionFee;
+
+        cout << "Transaction Valid: true" << endl;
+        cout << fixed << setprecision(2);
+        cout << "Remaining Balance: " << accountBalance;
+    }
+    else {
+        cout << "Transaction Valid: false";
+    }
+
+    return 0;
+}
+
