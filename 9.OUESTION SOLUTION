@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+int main(){
+    float weight, height, bmi;
+
+     cin >> weight >> height;
+
+     bmi = weight / ( height * height);
+
+     cout << "BMI: " << bmi << endl;
+
+     if (bmi < 18.5 )
+     cout << "category: underweight";
+     else if (bmi < 25)
+     cout << "category: normalweight";
+     else if (bmi < 30)
+     cout << "category: overweight";
+     else 
+     cout << "category: obese";
+     
+
+    return 0;
+}
