@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int day, months, years;
+    cin >> day >> months >> years;
+
+    int days = 31;
+
+    if (months == 2)
+       days = ( years % 4 == 0) ? 29 : 28;
+    else if (months == 4 || months == 6 || months == 9 || months == 11) 
+       days = 30;
+
+       if (months >= 1 && months <= 12 && days >= 1 && day <= days)
+           cout <<"VALID DATE ";
+        else
+           cout <<"INVALID DATE";
+ 
+
+    return 0;
+}
