@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+int add(int a, int b){
+    return a + b;
+}
+int subtract(int a, int b){
+    return a - b;
+}
+int multiply(int a, int b){
+    return a * b;
+}
+
+int main(){
+    int a, b, choice;
+    cin>>choice;
+    cin>>a>> b;
+
+    switch(choice){
+        case 1:
+            cout<<add(a, b);
+            break;
+        case 2:
+            cout<<subtract(a, b);
+            break;
+        case 3:
+            cout<<multiply(a, b);
+            break;
+        default:
+            cout<<"Invalid Choice";
+    }
+    return 0;
+}
