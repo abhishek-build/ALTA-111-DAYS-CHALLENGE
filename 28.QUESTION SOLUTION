@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+struct Student{
+    string name;
+    int age;
+};
+
+int main(){
+    Student s1;
+    s1.name="Abhishek";
+    s1.age = 18;
+
+    cout<<"Name:"<<s1.name<<endl;
+    cout<<"Age:"<<s1.age<<endl;
+}
