@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+struct Student{
+    string name;
+    Student* next;
+};
+
+int main(){
+    Student s1, s2;
+    s1.name ="ABHISHEK";
+    s2.name ="VIVEK";
+
+    s1.next = &s2;
+    s2.next = nullptr;
+
+    cout<<"First Student:"<<s1.name<<endl;
+    cout<<"Second Student:"<<s1.next->name<<endl;
+}
